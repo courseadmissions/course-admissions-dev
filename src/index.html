@@ -21,15 +21,35 @@
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-     
-     <app-root></app-root>     
+
+     <app-root></app-root>
 
      <!-- SCRIPTS -->
-     <script src="assets/js/jquery.js"></script>
+     <script src="assets/js/jquery.js"></script>     
      <script src="assets/js/bootstrap.min.js"></script>
      <script src="assets/js/owl.carousel.min.js"></script>
      <script src="assets/js/smoothscroll.js"></script>
      <script src="assets/js/custom.js"></script>
+<!-- 
+     <script type="text/javascript">
+          function addFilesAfterViewRendered() {
+               let placeHolder = "FILE_PATH";
+               let includeJsFiles = "assets/js/bootstrap.min.js,assets/js/owl.carousel.min.js,assets/js/smoothscroll.js,assets/js/custom.js".split(',');
+               let scriptTag = '<script src=' + placeHolder + "><" + "/script>";
+               $(includeJsFiles).each((i, v) => $('body').append(scriptTag.replace(placeHolder, v)));
+          }
+
+          waitTillRender();
+          function waitTillRender() {
+               if (window.isViewRendered) {
+                    addFilesAfterViewRendered();
+               }
+               else {
+                    setTimeout(waitTillRender, 100);
+               }
+          }
+     </script> -->
+
 
 </body>
 
